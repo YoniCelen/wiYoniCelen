@@ -23,7 +23,11 @@
 
     <p>css + js</p>
     <p>add premade db entries</p>
-    <p>...</p>
+    <p>update user creation</p>
+    <p>update user edit</p>
+    <p>update create newsitem</p>
+    <p>update update newsitem</p>
+    <p></p>
 
 
 @endsection
