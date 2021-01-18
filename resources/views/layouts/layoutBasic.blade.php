@@ -10,7 +10,7 @@
 <body>
 <header id="header">
     <nav id="nav">
-        <a href="/">Home</a>
+        <a href="/home">Home</a>
         <a href="/user/{username}">Profile</a>
         <a href="/about">About</a>
         <a href="/news">News</a>

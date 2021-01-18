@@ -1,6 +1,6 @@
-@extends('layoutBasic')
+@extends('layouts.app')
 
-@section('body')
+@section('content')
 
 <!-- Generic Contact Form -->
 <section id="footer">

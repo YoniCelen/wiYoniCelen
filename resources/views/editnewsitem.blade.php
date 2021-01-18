@@ -1,7 +1,7 @@
-@extends('layoutBasic')
+@extends('layouts.app')
 
-@section('body')
+@section('content')
 
-
+    <p>Edit News Placeholder</p>
 
 @endsection

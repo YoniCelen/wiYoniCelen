@@ -10,7 +10,7 @@ class NewsController extends Controller
 
     public function index()
     {
-        $news = News::orderBy('id', 'desc')->get()->max(10);
+        $news = News::orderBy('id', 'desc')->get();
         return view('news', ['news' => $news]);
     }
 
@@ -30,14 +30,14 @@ class NewsController extends Controller
 
     public function show($id)
     {
-        $newsitem = News::where('id', $id)->findOrFail();
+        $newsitem = News::where('id', $id)->first();
 
         return view('newsitem', ['newsitem' => $newsitem]);
     }
 
     public function edit(News $news)
     {
-        //
+        return view('editnewsitem', ['news' => $news]);
     }
 
     public function update(Request $request, News $news)

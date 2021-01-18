@@ -1,13 +1,12 @@
-@extends('layoutBasic')
+@extends('layouts.app')
 
-@section('body')
+@section('content')
 
     <div id="wrapper">
         <div id="page" class="container">
             <h1 class="heading has-text-weight-bold is-size-4">New Newsitem</h1>
 
             <form method="POST" action="/news">
-                @csrf
 
                 <div class="field">
                     <label class="label" for=""></label>

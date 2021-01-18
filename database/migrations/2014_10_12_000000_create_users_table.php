@@ -20,9 +20,9 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('ign');
-            $table->date('verjaardag');
+            $table->date('birthday');
             $table->string('avatar')->default('placeholder');
-            $table->text('bio')->default(' ');
+            $table->text('bio');
             $table->boolean('isAdmin')->default(false);
             $table->rememberToken();
             $table->timestamps();

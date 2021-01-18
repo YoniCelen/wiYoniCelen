@@ -47,8 +47,22 @@ Route::get('/news', 'App\Http\Controllers\NewsController@index');
 
 Route::get('/news/{id}', 'App\Http\Controllers\NewsController@show');
 
+Route::get('/news/edit/{id}', 'App\Http\Controllers\NewsController@edit');
+
+Route::get('/news/update/{id}', 'App\Http\Controllers\NewsController@update');
+
+Route::get('/news/create', 'App\Http\Controllers\NewsController@create');
+
 //Users
 
 Route::get('/users', 'App\Http\Controllers\UserController@index');
 
-Route::get('/users/{username}', 'App\Http\Controllers\UserController@show');
+Route::get('/user/{username}', 'App\Http\Controllers\UserController@show');
+
+Route::get('/user/edit/{username}', 'App\Http\Controllers\UserController@edit');
+
+Route::get('/user/update/{username}', 'App\Http\Controllers\UserController@update');
+
+Route::get('/user/makeadmin/{username}', 'App\Http\Controllers\UserController@makeAdmin');
+
+
