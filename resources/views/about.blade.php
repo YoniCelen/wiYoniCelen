@@ -2,26 +2,22 @@
 
 @section('content')
 
-    <h3>Bronnen</h3>
+    <h3>Sources</h3>
     <p>https://laracasts.com/series/laravel-6-from-scratch/</p>
     <p>https://laravel.com/docs/8.x</p>
-    <p></p>
+    <p>https://stackoverflow.com/</p>
 
     <p><br></p>
-    <h3>Mogelijke Toekomstige Bronnen</h3>
-    <p>https://templated.co/introspect</p>
-    <p>https://unsplash.com/</p>
-    <p></p>
+    <h3>Known Bugs</h3>
+    <p>Update methods not working</p>
 
     <p><br></p>
-    <h3>Planned Features</h3>
-    <p>css + js</p>
-    <p>add premade db entries</p>
-    <p>update user creation</p>
-    <p>update user edit</p>
-    <p>update create newsitem</p>
-    <p>update update newsitem</p>
-    <p></p>
+    <h3>To Do</h3>
+    <p>Make contact page functional</p>
+    <p>Make FAQ page and make it updateable (got to fix update bug first)</p>
+    <p>Make decent homepage</p>
+    <p>Add images for newsposts and user avatars</p>
+    <p>clean up CSS</p>
 
 
 @endsection

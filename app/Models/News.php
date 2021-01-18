@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class News extends Model
 {
-    protected $fillable = [
-        'titel',
-        'afbeelding',
-        'text'
-    ];
+    protected $fillable = array(
+        'title',
+        'image',
+        'text',
+        'date'
+);
 }

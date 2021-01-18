@@ -16,19 +16,25 @@
     <h3>Bio</h3>
     <p>{{ $user->bio }}</p>
 
-    @if (\Auth::user()->name == $user->name)
+    @if (\Auth::user() != null)
 
-        <form method="get" action="/user/edit/{{ $user->name }}">
-            <button type="submit">Edit</button>
-        </form>
+        @if (\Auth::user()->name == $user->name)
 
-    @endif
+            <form method="get" action="/user/edit/{{ $user->name }}">
+                <button type="submit">Edit</button>
+            </form>
 
-    @if (\Auth::user()->isAdmin || !$user->isAdmin)
+        @endif
 
-        <form method="get" action="/news/makeadmin/{{ $user->name }}">
-            <button type="submit">Make admin</button>
-        </form>
+        @if (\Auth::user()->isAdmin && !$user->isAdmin)
+
+            <form method="post" action="/user/makeadmin/{{ $user->name }}">
+                @csrf
+                @method('put')
+                <button type="submit">Make admin</button>
+            </form>
+
+        @endif
 
     @endif
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Scalar\String_;
 
 class UserController extends Controller
@@ -44,28 +45,30 @@ class UserController extends Controller
         return view('user', ['user' => $user]);
     }
 
-    public function edit(User $user)
+    public function edit($name)
     {
+        $user = User::where('name', $name)->first();
         return view('edituser', ['user' => $user]);
     }
 
     public function update(User $user)
     {
-        User::update(request()->validate([
-            'password' => 'required',
-            'email' => 'required',
+        $user->update(request()->validate([
             'ign' => 'required',
-            'birthday' => 'required',
             'avatar' => 'required',
             'bio' => 'required'
         ]));
+
+        return redirect('/users');
     }
 
     public function makeAdmin(User $user)
     {
-        User::update(request()->validate([
-            'isAdmin' => true,
+        $user->update(request()->validate([
+            'isAdmin' => true
         ]));
+
+        return redirect('/users');
     }
 
     public function destroy(User $user)

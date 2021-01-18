@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run() {
 
-        DB::table('users')->insert([
+        DB::table('users')->insert([[
             'name' => 'admin',
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
@@ -26,7 +26,17 @@ class DatabaseSeeder extends Seeder
             'bio' => '...',
             'isAdmin' => true,
             'remember_token' => Str::random(10),
-        ]);
+        ],[
+            'name' => 'test',
+            'email' => 'test@test.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('test'),
+            'ign' => 'test',
+            'birthday' => date_date_set(date_create(), 1999, 1, 1),
+            'bio' => '...',
+            'isAdmin' => false,
+            'remember_token' => Str::random(10),
+        ]]);
 
         DB::table('news')->insert([[
             'title'=>"First post",
