@@ -6,6 +6,7 @@
     <p>https://laracasts.com/series/laravel-6-from-scratch/</p>
     <p>https://laravel.com/docs/8.x</p>
     <p>https://stackoverflow.com/</p>
+    <p>https://www.youtube.com/watch?v=iQoRh_9LkjU</p>
 
     <p><br></p>
     <h3>Known Bugs</h3>
