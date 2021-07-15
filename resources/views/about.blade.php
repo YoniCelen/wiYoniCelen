@@ -14,7 +14,7 @@
 
     <p><br></p>
     <h3>To Do</h3>
-    <p>Make contact page functional</p>
+    <p>More Contact page testing</p>
     <p>Make FAQ page and make it updateable (got to fix update bug first)</p>
     <p>Make decent homepage</p>
     <p>Add images for newsposts and user avatars</p>

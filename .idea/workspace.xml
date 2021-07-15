@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="see about page for status">
+    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="made contact form functional (mails get sent to Mailtrap)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +188,8 @@
       <workItem from="1625925112765" duration="122000" />
       <workItem from="1626002821683" duration="147000" />
       <workItem from="1626084449495" duration="594000" />
-      <workItem from="1626265108012" duration="3386000" />
+      <workItem from="1626265108012" duration="4346000" />
+      <workItem from="1626353310796" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="login + auth used to work, changed user, but not the creation so can't make usable user right now. Too tired to fix it right now.">
       <created>1609104595338</created>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610950550153</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made contact form functional (mails get sent to Mailtrap)">
+      <created>1626310811050</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626310811050</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +241,7 @@
     <MESSAGE value="login + auth used to work, changed user, but not the creation so can't make usable user right now. Too tired to fix it right now." />
     <MESSAGE value="alot is fixed, still to do: Edit User, Edit Newsitem, Create Newsitem and fix Contact Page" />
     <MESSAGE value="see about page for status" />
-    <option name="LAST_COMMIT_MESSAGE" value="see about page for status" />
+    <MESSAGE value="made contact form functional (mails get sent to Mailtrap)" />
+    <option name="LAST_COMMIT_MESSAGE" value="made contact form functional (mails get sent to Mailtrap)" />
   </component>
 </project>
