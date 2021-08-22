@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Forum;
 
-class ForumController
+class ForumController extends Controller
 {
 
     public function index()
@@ -30,6 +30,7 @@ class ForumController
         $forum = new Forum();
         $forum->title = request('title');
         $forum->text = request('text');
+        $forum->creator = \Auth::user()->name;
         $forum->save();
 
         return redirect('/forum');
@@ -39,13 +40,13 @@ class ForumController
     {
         $forumItem = Forum::where('id', $id)->first();
 
-        return view('forumItem', ['forumItem' => $forumItem]);
+        return view('forumitem', ['forumItem' => $forumItem]);
     }
 
     public function edit($id)
     {
         $forum = Forum::find($id);
-        return view('editForumItem', ['forum' => $forum]);
+        return view('editforumitem', ['forum' => $forum]);
     }
 
     public function update($id)

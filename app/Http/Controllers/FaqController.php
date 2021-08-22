@@ -6,12 +6,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Faq;
 
-class FaqController
+class FaqController extends Controller
 {
     public function index()
     {
-        $faq = FAQ::orderBy('id', 'desc')->get();
+        $faq = FAQ::orderBy('id', 'asc')->get();
         return view('faq', ['faq' => $faq]);
+    }
+
+    public function create()
+    {
+        return view('createfaqitem');
     }
 
     public function store()
@@ -22,17 +27,24 @@ class FaqController
         ]);
 
         $faq = new Faq();
-        $faq->question = request('title');
-        $faq->answer = request('text');
+        $faq->question = request('question');
+        $faq->answer = request('answer');
         $faq->save();
 
         return redirect('/faq');
     }
 
+    public function show($id)
+    {
+        $faqItem = Faq::where('id', $id)->first();
+
+        return view('faqitem', ['faqItem' => $faqItem]);
+    }
+
     public function edit($id)
     {
         $faq = Faq::find($id);
-        return view('editFaqItem', ['faq' => $faq]);
+        return view('editfaqitem', ['faq' => $faq]);
     }
 
     public function update($id)
@@ -44,10 +56,15 @@ class FaqController
         ]);
 
         $faq->update([
-            'question' => request('title'),
-            'answer' => request('text')
+            'question' => request('question'),
+            'answer' => request('answer')
         ]);
 
         return redirect('/faq');
+    }
+
+    public function destroy(Faq $faq)
+    {
+        //
     }
 }

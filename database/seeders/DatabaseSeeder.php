@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
             'text'=>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
         ]]);
 
-        DB::table('faq')->insert([[
+        DB::table('faqs')->insert([[
             'question'=>"Wie maakte deze website?",
             'answer'=>"Yoni Celen",
         ],[
@@ -57,7 +57,7 @@ class DatabaseSeeder extends Seeder
             'answer'=>"Web Integration",
         ]]);
 
-        DB::table('forum')->insert([[
+        DB::table('forums')->insert([[
             'title'=>"First post",
             'text'=>"That's right, we have a rudimentary community forum page now.",
         ],[

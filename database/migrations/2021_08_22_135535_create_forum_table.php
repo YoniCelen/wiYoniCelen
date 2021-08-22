@@ -13,10 +13,11 @@ class CreateForumTable extends Migration
      */
     public function up()
     {
-        Schema::create('forum', function (Blueprint $table) {
+        Schema::create('forums', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('text');
+            $table->string('creator')->default('Yoni');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateForumTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('forum');
+        Schema::dropIfExists('forums');
     }
 }

@@ -8,6 +8,7 @@ class Forum extends Model
 {
     protected $fillable = array(
         'title',
-        'text'
+        'text',
+        'creator'
     );
 }

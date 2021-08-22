@@ -15,8 +15,6 @@
 
     <p><br></p>
     <h3>To Do</h3>
-    <p>Make FAQ page and make it updatable (db made)</p>
-    <p>Make rudimentary forum (db made)</p>
     <p>Make decent homepage</p>
     <p>Add images for news posts and user avatars</p>
 

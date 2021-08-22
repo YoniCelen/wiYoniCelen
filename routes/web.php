@@ -95,3 +95,7 @@ Route::post('/faq', 'App\Http\Controllers\FaqController@store');
 Route::get('/faq/edit/{id}', 'App\Http\Controllers\FaqController@edit');
 
 Route::put('/faq/update/{id}', 'App\Http\Controllers\FaqController@update');
+
+Route::get('/faq/create', 'App\Http\Controllers\FaqController@create');
+
+Route::get('/faq/{id}', 'App\Http\Controllers\FaqController@show');
