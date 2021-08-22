@@ -38,6 +38,7 @@ Route::get('/about', function () {
 //Contact
 
 Route::get('/contact', 'App\Http\Controllers\ContactFormController@create');
+
 Route::post('/contact', 'App\Http\Controllers\ContactFormController@store');
 
 //News

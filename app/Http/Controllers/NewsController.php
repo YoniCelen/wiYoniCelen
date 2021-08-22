@@ -46,12 +46,13 @@ class NewsController extends Controller
 
     public function edit($id)
     {
-        $news = News::where('id', $id)->first();
+        $news = News::find($id);
         return view('editnewsitem', ['news' => $news]);
     }
 
-    public function update(News $news)
+    public function update($id)
     {
+        $news = News::find($id);
         request()->validate([
             'title' => 'required',
             'image' => 'required',
@@ -64,6 +65,16 @@ class NewsController extends Controller
             'text' => request('text'),
             'date' => now()
         ]);
+
+        /*News::where('title', $news->title)
+            ->where('text', $news->text)
+            ->update([
+                'title' => request('title'),
+                'image' => request('image'),
+                'text' => request('text'),
+                'date' => now()
+            ]);
+        */
 
         return redirect('/news');
     }

@@ -51,8 +51,9 @@ class UserController extends Controller
         return view('edituser', ['user' => $user]);
     }
 
-    public function update(User $user)
+    public function update($name)
     {
+        $user = User::where('name', $name)->first();
         $user->update(request()->validate([
             'ign' => 'required',
             'avatar' => 'required',
@@ -62,11 +63,12 @@ class UserController extends Controller
         return redirect('/users');
     }
 
-    public function makeAdmin(User $user)
+    public function makeAdmin($name)
     {
-        $user->update(request()->validate([
+        $user = User::where('name', $name)->first();
+        $user->update([
             'isAdmin' => true
-        ]));
+        ]);
 
         return redirect('/users');
     }
