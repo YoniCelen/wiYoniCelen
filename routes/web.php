@@ -25,15 +25,19 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Welcome
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome'); });
 
 //About
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', function () { return view('about'); });
+
+//FAQ
+
+Route::get('/faq', function () { return view('faq'); });
+
+//SHOP
+
+Route::get('/shop', function () { return view('shop'); });
 
 //Contact
 
@@ -66,3 +70,4 @@ Route::put('/user/makeadmin/{username}', 'App\Http\Controllers\UserController@ma
 Route::put('/user/update/{username}', 'App\Http\Controllers\UserController@update');
 
 Route::get('/user/{username}', 'App\Http\Controllers\UserController@show');
+

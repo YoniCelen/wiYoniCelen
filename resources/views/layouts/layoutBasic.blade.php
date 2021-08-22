@@ -14,7 +14,9 @@
         <a href="/user/{username}">Profile</a>
         <a href="/about">About</a>
         <a href="/news">News</a>
+        <a href="/faq">FAQ</a>
         <a href="/contact">Contact</a>
+        <a href="/shop">Shop</a>
     </nav>
 </header>
 

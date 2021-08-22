@@ -49,9 +49,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/news">News</a>
                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/faq">FAQ</a>
+                            </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/shop">Shop</a>
+                            </li>
 
                         @endif
 

@@ -10,15 +10,14 @@
 
     <p><br></p>
     <h3>Known Bugs</h3>
-    <p>Update methods not working</p>
+    <p>/</p>
 
     <p><br></p>
     <h3>To Do</h3>
-    <p>More Contact page testing</p>
-    <p>Make FAQ page and make it updateable (got to fix update bug first)</p>
+    <p>Make FAQ page and make it updateable</p>
     <p>Make decent homepage</p>
     <p>Add images for newsposts and user avatars</p>
-    <p>clean up CSS</p>
+    <p>Make membership shop</p>
 
 
 @endsection

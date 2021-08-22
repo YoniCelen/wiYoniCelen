@@ -48,5 +48,24 @@ class DatabaseSeeder extends Seeder
             'title'=>"Lorem ipsum",
             'text'=>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
         ]]);
+
+        DB::table('faq')->insert([[
+            'question'=>"Wie maakte deze website?",
+            'answer'=>"Yoni Celen",
+        ],[
+            'question'=>"Voor welk vak maakte hij deze website",
+            'answer'=>"Web Integration",
+        ]]);
+
+        DB::table('forum')->insert([[
+            'title'=>"First post",
+            'text'=>"That's right, we have a rudimentary community forum page now.",
+        ],[
+            'title'=>"Second post",
+            'text'=>"Look, a post!",
+        ],[
+            'title'=>"Lorem ipsum",
+            'text'=>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        ]]);
     }
 }
