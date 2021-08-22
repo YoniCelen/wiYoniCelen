@@ -9,13 +9,8 @@
                         <h3>{{ $newsitem->title }}</h3>
                     </div>
                     <div class="card-body">
+                        <p><img src="../storage/{{ $newsitem->image }}.png"></p>
                         <p><a>{{ $newsitem->text }}</a></p>
-                        <p>
-                            <img
-                                src={{ $newsitem->image }},
-                                alt=""
-                            >
-                        </p>
                     </div>
                 </div>
 

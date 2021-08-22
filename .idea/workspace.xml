@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="tried to add payment, but is depricated &#10;&#10;added forumcontroller and faqcontroller with routes">
-      <change afterPath="$PROJECT_DIR$/resources/views/createfaqitem.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/createforumitem.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/editfaqitem.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/faqitem.blade.php" afterDir="false" />
+    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="finished FAQ and Forum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FaqController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FaqController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Forum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_22_135432_create_faq_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_22_135432_create_faq_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_22_135535_create_forum_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_08_22_135535_create_forum_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/newsitem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newsitem.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/wi_karel_verstreken_laravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -177,11 +166,11 @@
       <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\public\storage" />
+      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\storage" />
+      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\storage\app" />
+      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\images" />
       <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views" />
-      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views\auth" />
-      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views\news" />
-      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views\user" />
-      <recent name="C:\Users\yonic\PhpstormProjects\wiYoniCelen\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,7 +201,7 @@
       <workItem from="1626532294823" duration="2235000" />
       <workItem from="1629559840796" duration="10981000" />
       <workItem from="1629652809092" duration="19000" />
-      <workItem from="1629653100112" duration="6267000" />
+      <workItem from="1629653100112" duration="9329000" />
     </task>
     <task id="LOCAL-00001" summary="login + auth used to work, changed user, but not the creation so can't make usable user right now. Too tired to fix it right now.">
       <created>1609104595338</created>
@@ -270,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629654925587</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finished FAQ and Forum">
+      <created>1629659618977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629659618977</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +294,7 @@
     <MESSAGE value="fixed update bug" />
     <MESSAGE value="added faq and forum db + seeder" />
     <MESSAGE value="tried to add payment, but is depricated &#10;&#10;added forumcontroller and faqcontroller with routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried to add payment, but is depricated &#10;&#10;added forumcontroller and faqcontroller with routes" />
+    <MESSAGE value="finished FAQ and Forum" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished FAQ and Forum" />
   </component>
 </project>

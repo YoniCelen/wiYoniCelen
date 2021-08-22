@@ -16,7 +16,6 @@
     <p><br></p>
     <h3>To Do</h3>
     <p>Make decent homepage</p>
-    <p>Add images for news posts and user avatars</p>
 
 
 

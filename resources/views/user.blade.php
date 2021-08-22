@@ -3,8 +3,7 @@
 @section('content')
 
     <h1>Profile</h1>
-    <h3>Avatar</h3>
-    <p>{{ $user->avatar }}</p>
+    <p><img src="../storage/{{ $user->avatar }}.png"></p>
     <h3>Name</h3>
     <p>{{ $user->name }}</p>
     <h3>Ign</h3>
