@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="fixed update bug">
-      <change afterPath="$PROJECT_DIR$/app/Models/Faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Forum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_08_22_135432_create_faq_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_08_22_135535_create_forum_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
+    <list default="true" id="51dd80c1-b33b-491f-a61b-b7cd11627c33" name="Default Changelist" comment="added faq and forum db + seeder">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FaqController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/forum.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wiYoniCelen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wiYoniCelen.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/layoutBasic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layoutBasic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +147,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mFoiUxFws5sLjoxl1JEV1tcBok" />
@@ -206,7 +210,9 @@
       <workItem from="1626265108012" duration="4346000" />
       <workItem from="1626353310796" duration="12002000" />
       <workItem from="1626532294823" duration="2235000" />
-      <workItem from="1629559840796" duration="6112000" />
+      <workItem from="1629559840796" duration="10981000" />
+      <workItem from="1629652809092" duration="19000" />
+      <workItem from="1629653100112" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="login + auth used to work, changed user, but not the creation so can't make usable user right now. Too tired to fix it right now.">
       <created>1609104595338</created>
@@ -250,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629638314194</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added faq and forum db + seeder">
+      <created>1629641217160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629641217160</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +289,7 @@
     <MESSAGE value="made contact form functional (mails get sent to Mailtrap)" />
     <MESSAGE value="forgot to version some files" />
     <MESSAGE value="fixed update bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed update bug" />
+    <MESSAGE value="added faq and forum db + seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added faq and forum db + seeder" />
   </component>
 </project>

@@ -15,6 +15,7 @@
         <a href="/about">About</a>
         <a href="/news">News</a>
         <a href="/faq">FAQ</a>
+        <a href="/forum">Forum</a>
         <a href="/contact">Contact</a>
         <a href="/shop">Shop</a>
     </nav>
